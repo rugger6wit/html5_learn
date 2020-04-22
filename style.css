@@ -1,0 +1,252 @@
+h1 {
+    color: dodgerblue;
+    font-size: x-large;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+}
+.question {
+    color: rgb(233, 120, 27);
+    font-style: inherit;
+    font-size: 22;
+}
+.title {
+    color: rgb(63, 196, 85);
+}
+
+#italic {
+    color: green;
+    font-style: italic;
+}
+
+nav {
+    background-color: blue;
+    nav-up: auto;
+}
+.nav-wrapper {
+    background-color: blue;
+}
+
+a {
+    text-decoration-line: none;
+    
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    /* color: white; */
+    margin: 1px;
+    padding: 1px;
+}
+
+.container {
+    border: 5px dashed blue;
+    margin: 5px 50px 25px 100px;
+    padding: 10%;
+}
+
+.Box {
+    background-color: blue;
+    height: 200px;
+    width:  200px;
+    margin: 10px 10px 0px 0px;
+}
+
+@keyframes fadeMe {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes rotation {
+    0%{transform: rotate(90deg);}
+    25%{transform: rotate(135deg);}
+    50%{transform: rotate(180deg);}
+    75%{transform: rotate(215deg);}
+    100%{transform: rotate(360deg);}
+    
+}
+
+@keyframes getBigger {
+    0%{transform: scale(1);}
+    50%{transform: scale(2);}
+    100%{transform: scale(.5);}
+}
+
+@keyframes changeColors {
+    0%{background-color: grey;}
+    25%{background-color: blue;}
+    50%{background-color: red;}
+    75%{background-color: green;}
+    100%{background-color: yellow;}
+}
+
+@keyframes moveBox {
+    0% {left: 0px; top: 0px;}
+    25% {left: 100px; top: 0px;}
+    50% {left: 100px; top: 200px;}
+    75% {left: 0px; top: 200px;}
+    100% {left: 0px; top: 0px;}
+}
+
+#box1 {
+    animation-name: fadeMe;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#box2 {
+    animation-name: rotation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    border-radius: 10%;
+    background-image: radial-gradient(circle, black, yellow,grey,red );
+}
+
+#box3 {
+   animation: getBigger 5s infinite ease-in-out;
+   border-radius: 50%;
+   background-color: orange;
+}
+#box4 {
+    animation: changeColors 10s 2s forwards;
+}
+
+#box5 {
+    position: relative;
+    background-color: purple;
+    animation: moveBox 5s 3s;
+}
+
+#box6 {
+    top: 100px;
+    left: 100px;
+    position: relative;
+}
+
+.circle_image {
+    border-radius: 50%;
+}
+
+img {
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.52);
+    border-radius: 10px;
+}
+
+.flex {
+    border: 3px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: center;
+}
+
+/* form input {
+    display: block;
+    margin: 30px;
+}
+
+form textarea {
+    display: block;
+    margin: 30px;
+}
+
+form button{
+    display: inline-block;
+    
+} */
+
+form input, textarea, button{
+    display: block;
+    margin: 30px;
+}
+
+.contact_box {
+    display: flex;
+    justify-content: center;
+}
+
+.row {
+    margin: 30px;
+}
+
+/* .input-field {
+    margin: 20px;
+} */
+
+.btn {
+    background-color: blue; 
+    color: white;
+}
+/* Wrappers */
+body {
+    margin: 40px;
+  }
+  
+  .wrapper {
+          display: grid;
+          grid-gap: 10px;
+          grid-template-columns: repeat(8, [col] 12%) ;
+          grid-template-rows: repeat(3, [row] auto  );
+          background-color: #fff;
+          color: #444;
+          margin: 10px;
+      }
+  
+      .box {
+          /* background-color: #444; */
+          color: #fff;
+          border-radius: 5px;
+          padding: 20px;
+          font-size: 150%;
+          z-index:10;
+  
+      }
+  
+      .a {
+          grid-column: col / span  3;
+          grid-row: row ;
+          color: red;
+          display: flex;
+          justify-content: center;
+          
+      }
+      .b {
+          grid-column: col 5 / span  3 ;
+          grid-row: row ;
+          display: flex;
+          justify-content: center;
+      }
+      .c {
+          grid-column: col / span 8;
+          grid-row: row 2 ;
+          background-image: linear-gradient(to right, green,white,black);
+          display: flex;
+          justify-content: stretch;
+          z-index: 15;
+      }
+      .d {
+          grid-column: col 1 / span  4 ;
+          grid-row: row 3 ;
+      }
+  
+      .e {
+          grid-column: col 2 / span  1;
+          grid-row: row 3;
+          z-index: 12;
+      }
+  
+      .f {
+          grid-column: col 3 / span 3;
+          grid-row: row 2  ;
+          /* background-color: rgba(49,121,207, 0.5); */
+          z-index: 20;
+      }

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Contact </h1>
+    <header>
+        <nav>
+            <ul>
+                <a href="index.html"><li>Home</li></a>
+                <a href="about.html"><li>About</li></a>
+                <a href="contact.html"><li>Contact</li></a>
+                <a href="contact2.html"><li>Contact 2</li></a>
+            </ul>
+        </nav>
+    </header>
+
+    <form>
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email Address" required>
+        <input type="tel" name="phone_num" placeholder="(860) 712-5122" 
+        pattern="[\(]\d{3][\)\]\d{3}[\-]\d{4}" required>
+         <!-- <textarea name="" id="" cols="30" rows="10"></textarea> -->
+        <textarea name="message" placeholder="Your Message"></textarea>
+        <button type="submit">Submit</button>
+        <button type="reset">Clear</button>
+    </form>
+   
+
+</body>
+</html>
